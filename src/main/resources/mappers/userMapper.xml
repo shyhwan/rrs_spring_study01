@@ -3,11 +3,11 @@
 
 <mapper namespace="userMapper">
 	<insert id="insert">
-		INSERT INTO USERS(ID, NAME, PSWD)
-		VALUES (#{id}, #{name}, SHA2(#{pswd},256))
+		INSERT INTO USERS(userId, userNm, userPw, hpNum, email)
+		VALUES (#{userId}, #{userNm}, SHA2(#{userPw},256), #{hpNum}, #{email})
 	</insert>
 	
 	<select id="select">
-		SELECT id, name FROM USERS WHERE #{id}
+		SELECT userId, userNm, userPw, hpNum, email FROM USERS WHERE userId = #{id}
 	</select>	
 </mapper>

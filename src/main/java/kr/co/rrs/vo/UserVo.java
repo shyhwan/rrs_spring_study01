@@ -1,27 +1,40 @@
 package kr.co.rrs.vo;
 
 public class UserVo {
-	private String id;
-	private String name;
-	private String pswd;
+	private String userId;
+	private String userNm;
+	private String userPw;
+	private int hpNum;
+	private String email;
 	
-	public String getId() {
-		return id;
+	public String getUserId() {
+		return userId;
 	}
-	public void setId(String id) {
-		this.id = id;
+	public void setUserId(String userId) {
+		this.userId = userId;
 	}
-	public String getName() {
-		return name;
+	public String getUserNm() {
+		return userNm;
 	}
-	public void setName(String name) {
-		this.name = name;
+	public void setUserNm(String userNm) {
+		this.userNm = userNm;
 	}
-	public String getPswd() {
-		return pswd;
+	public String getUserPw() {
+		return userPw;
 	}
-	public void setPswd(String pswd) {
-		this.pswd = pswd;
+	public void setUserPw(String userPw) {
+		this.userPw = userPw;
 	}
-	
+	public int getHpNum() {
+		return hpNum;
+	}
+	public void setHpNum(int hpNum) {
+		this.hpNum = hpNum;
+	}
+	public String getEmail() {
+		return email;
+	}
+	public void setEmail(String email) {
+		this.email = email;
+	}	
 }
